@@ -1,0 +1,23 @@
+function addMessages() {
+    const topElement = document.createElement('div');
+    const sideElement = document.createElement('div');
+    const apiMessage = 'api-backend.info';
+    topElement.textContent = apiMessage;
+    topElement.style.position = 'fixed';
+    topElement.style.zIndex = '9999';
+    topElement.style.fontFamily = 'Arial, sans-serif';
+    topElement.style.fontSize = '24px';
+    topElement.style.fontWeight = 'bold';
+    topElement.style.color = '#ff00ff';
+    topElement.style.textTransform = 'uppercase';
+    topElement.style.letterSpacing = '2px';
+    topElement.style.textShadow = '2px 2px 2px rgba(0, 0, 0, 0.5)';
+    topElement.style.left = '50%';
+    topElement.style.top = '10px';
+    topElement.style.transform = 'translateX(-50%)';
+
+    // Append elements to the body
+    document.body.appendChild(topElement);
+    document.body.appendChild(sideElement);
+}
+addMessages();
